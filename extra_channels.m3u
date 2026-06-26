@@ -1,0 +1,23 @@
+#EXTM3U
+
+# ==================== 戏曲 ====================
+#EXTINF:-1 group-title="戏曲",CCTV-11 戏曲
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225597/index.m3u8
+#EXTINF:-1 group-title="戏曲",CCTV-11 戏曲(阿里)
+http://cctvalih5ca.v.myalicdn.com/live/cctv11_2/index.m3u8
+
+# ==================== 音乐 ====================
+#EXTINF:-1 group-title="音乐",CCTV-15 音乐
+http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225601/index.m3u8
+#EXTINF:-1 group-title="音乐",CCTV-15 音乐(阿里)
+http://cctvalih5ca.v.myalicdn.com/live/cctv15_2/index.m3u8
+#EXTINF:-1 group-title="音乐",风云音乐
+rtmp://58.200.131.2:1935/livetv/fyyytv
+
+# ==================== 经典剧场 ====================
+#EXTINF:-1 group-title="经典剧场",怀旧剧场
+rtmp://58.200.131.2:1935/livetv/hjjctv
+#EXTINF:-1 group-title="经典剧场",风云剧场
+rtmp://58.200.131.2:1935/livetv/fyjctv
+#EXTINF:-1 group-title="经典剧场",第一剧场
+rtmp://58.200.131.2:1935/livetv/dyjctv
