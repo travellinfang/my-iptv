@@ -5,6 +5,10 @@ on:
     - cron: '0 5 * * *'
   workflow_dispatch:
 
+# 关键：给工作流添加写入权限
+permissions:
+  contents: write
+
 jobs:
   check-iptv:
     runs-on: ubuntu-latest
@@ -12,6 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
