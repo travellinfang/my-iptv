@@ -5,13 +5,18 @@ on:
     - cron: '0 5 * * *'
   workflow_dispatch:
 
+# 添加权限声明，解决 exit code 128
+permissions:
+  contents: write
+
 jobs:
   check-iptv:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
-      - uses: actions/checkout@v4
+      # 升级到 v5，解决 Node.js 20 废弃警告
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-python@v5
         with:
